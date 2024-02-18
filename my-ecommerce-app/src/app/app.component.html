@@ -1,0 +1,48 @@
+<section id="header">
+  <a
+    routerLink="/"
+    routerLinkActive="active"
+    ariaCurrentWhenActive="page"
+    class="btn fs-4 text-uppercase fw-bolder changeoutline"
+    disabled
+    >Fatak<span class="text-warning border border-0">Pay</span></a
+  >
+  <div>
+    <ul id="navbar">
+      <li id="lg-ba">
+        <a
+          routerLink="cart"
+          routerLinkActive="active"
+          ariaCurrentWhenActive="page"
+          ><i class="far fa-shopping-bag"></i>
+          <!-- Add the notification badge here --></a
+        >
+      </li>
+      <li id="lg-ba">
+        <a
+          routerLink="userinfo"
+          routerLinkActive="active"
+          ariaCurrentWhenActive="page"
+          >SignIn</a
+        >
+      </li>
+      <a href="#" id="close"><i class="far fa-times"></i></a>
+    </ul>
+  </div>
+  <div id="mobile">
+    <a routerLink="cart" routerLinkActive="active" ariaCurrentWhenActive="page"
+      ><i class="far fa-shopping-bag"></i
+    ></a>
+    <a
+      class="btn fs-7 fw-normal changeoutline"
+      routerLink="userinfo"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
+      >SignIn</a
+    >
+  </div>
+</section>
+
+<div class="container mt-5">
+  <router-outlet></router-outlet>
+</div>
